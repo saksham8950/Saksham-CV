@@ -18,13 +18,13 @@ const Navbar = () => {
         <nav className={showNav && "active"} id="nav">
           <ul>
             <li>
-              <a href="">Home</a>
+              <a href="#cover">Home</a>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             {/* <li><a href="" >Projects</a></li> */} {/* Todo in Future */}
             <li>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "icon": "code.png",
+    "title": "Front End",
+    "skills": ["HTML", "Css", "Js", "sass", "Bootstrap"]
+  },
+  {
+    "id": "2",
+    "icon": "terminal.png",
+    "title": "Back End",
+    "skills": ["NodeJs", "Express", "Mongoose", "Php", "MySQL"]
+  },
+  {
+    "id": "3",
+    "icon": "dots.png",
+    "title": "Others",
+    "skills": ["Git", "Github"]
+  }
+]
