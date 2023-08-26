@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Cover = () => {
   return (
@@ -11,9 +12,9 @@ const Cover = () => {
             to end.
           </p>
           {/* <p className="sub-title">MERN stack Developer</p> todo in Future */}
-          <a href="#contact" className="hero-btn" title="">
-            Contact Me
-          </a>
+          <Link to="contact">
+            <button className="hero-btn">Contact Me</button>
+          </Link>
         </div>
         {/* <div className="hero-img"><img src="" className="" alt="Cover Image"></img></div> ToDo in the Future, Side Image if to be add */}
       </div>

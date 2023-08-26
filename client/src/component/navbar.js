@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Bars_black from "../images/bars-black.png";
 import Cross_black from "../images/cross-black.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -18,17 +19,19 @@ const Navbar = () => {
         <nav className={showNav && "active"} id="nav">
           <ul>
             <li>
-              <a href="#cover">Home</a>
+              {/* <a href="#cover">Home</a> */}
+              <Link to="/">Home</Link>
             </li>
-            <li>
+            {/* <li>
               <a href="#about">About</a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="#skills">Skills</a>
-            </li>
+            </li> */}
             {/* <li><a href="" >Projects</a></li> */} {/* Todo in Future */}
             <li>
-              <a href="">Contact</a>
+              {/* <a href="">Contact</a> */}
+              <Link to="contact">Contact</Link>
             </li>
           </ul>
         </nav>
@@ -49,6 +52,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      <div className="spacer"></div>
     </>
   );
 };

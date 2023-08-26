@@ -50,7 +50,10 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 1rem 0;
-  position: sticky;
+  // position: sticky;
+  position: fixed;
+  width: 100%;
+
   z-index: 10;
 
   .nav-title {
@@ -128,6 +131,9 @@ body {
   display: block !important;
 }
 
+.spacer {
+  height: 70px;
+}
 // Hero Section
 .hero-section {
   display: flex;
@@ -155,6 +161,7 @@ body {
     }
     .hero-btn {
       color: var(--color-white);
+      border: none;
       background: var(--color-secondary);
       padding: 0.7rem 1.5rem;
       text-decoration: none;
@@ -264,6 +271,151 @@ body {
   }
 }
 
+//Contact Section
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  text-align: center;
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+    .contact-title {
+      font-size: 4rem;
+      font-weight: 600;
+      padding: 0 0 1.5rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 5rem;
+        height: 5px;
+        border-radius: 50px;
+        background-color: var(--color-secondary);
+        transform: translateX(113%);
+      }
+    }
+
+    .contact-subtitle {
+      font-size: 1.1rem;
+      margin: 2.5rem 0 3rem;
+      padding: 0 2rem;
+    }
+
+    .form-wrapper {
+      width: 100%;
+      padding: 1rem 2rem 3rem;
+
+      .contact-form {
+        width: 100%;
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        box-shadow: var(--shadow);
+
+        .form-input {
+          width: 100%;
+          padding: 1.7rem;
+          font-size: 1.2rem;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          background: #ebebeb;
+        }
+        .form-btn {
+          align-self: flex-end;
+          padding: 1rem 1.5rem;
+          font-size: 1.5rem;
+          font-weight: 500;
+          border: none;
+          border-radius: 5px;
+          background: var(--color-secondary);
+          color: var(--color-white);
+          transition: 0.2s ease-in-out 0s;
+
+          &:hover {
+            background: var(--color-secondary-hover);
+          }
+        }
+      }
+    }
+  }
+}
+
+//Footer Section
+.footer-section {
+  color: var(--color-white);
+  background: var(--color-secondary);
+  width: 100%;
+  padding: 0 2rem;
+
+  .footer-container {
+    max-width: 120rem;
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    .footer-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 4rem 0;
+
+      .footer-title {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin: 1rem 0;
+      }
+      .footer-left {
+        max-width: 30rem;
+
+        .footer-subtitle {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    hr {
+      width: 100%;
+    }
+    .footer-copyright {
+      padding: 3rem 0;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .skills-section {
+    margin-bottom: -5rem;
+
+    .skill-card-grp {
+      grid-template-columns: repeat(1, 1fr);
+      border: 1px solid var(--card-border);
+      border-bottom: none;
+      .skill-card {
+        border-bottom: 1px solid var(--card-border);
+        border-right: 0px solid var(--card-border);
+      }
+    }
+  }
+}
+
 // smaller or equal
 @media (max-width: 770px) {
   #bar-btn,
@@ -307,20 +459,18 @@ body {
       }
     }
   }
-  .skills-section {
-    .skill-card-grp {
-      grid-template-columns: repeat(1, 1fr);
-      border: 1px solid var(--card-border);
-      border-bottom: none;
-      .skill-card {
-        border-bottom: 1px solid var(--card-border);
-        border-right: 0px solid var(--card-border);
+
+  .footer-section {
+    .footer-container {
+      .footer-wrapper {
+        flex-direction: column;
+        gap: 4rem;
       }
     }
   }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 430px) {
   .hero-section {
     .hero-wrapper {
       .title {
@@ -337,9 +487,44 @@ body {
     }
   }
   .skills-section {
+    margin-bottom: -7rem;
     .skill-card-grp {
       .skill-card {
         padding: 4rem;
+      }
+    }
+  }
+  .contact-section {
+    .contact-wrapper {
+      .contact-title {
+        font-size: 3rem;
+
+        &:after {
+          transform: translateX(65%);
+        }
+      }
+      .contact-subtitle {
+        padding: 0;
+        margin: 2rem 0;
+      }
+      .form-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+
+        .contact-form {
+          box-shadow: none;
+          padding: 0;
+
+          .form-input {
+            padding: 1rem;
+            font-size: 1rem;
+          }
+          .form-btn {
+            align-self: center;
+            padding: 1rem;
+            font-size: 1rem;
+          }
+        }
       }
     }
   }
