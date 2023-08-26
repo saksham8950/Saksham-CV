@@ -14,7 +14,9 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <div className="nav-title">
-          <p className="brand">Saksham</p>
+          <p className="brand">
+            <Link to="/">Saksham</Link>
+          </p>
         </div>
         <nav className={showNav && "active"} id="nav">
           <ul>

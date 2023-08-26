@@ -1,4 +1,5 @@
 import React from "react";
+import ArrowUp from "./arrow-up";
 
 const Footer = () => {
   return (
@@ -14,8 +15,12 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-right">
-              <div className="footer-title">social</div>
-              <div className="footer-social">social-icons white</div>
+              {/* <div className="footer-title">social</div>
+              <div className="footer-social">social-icons white</div> */}
+              {/* <button className="btn-scroll-top">
+                <img src={ArrowUp} />
+              </button> */}
+              <ArrowUp />
             </div>
           </div>
           <hr />
