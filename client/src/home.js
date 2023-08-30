@@ -10,7 +10,7 @@ function Home() {
       <HeroSection />
       <About />
       <Skills />
-      {/* <Projects /> */}
+      <Projects />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import ArrowUp from "./arrow-up";
+import Github from "../images/github.png";
 
 const Footer = () => {
   return (
@@ -13,18 +14,22 @@ const Footer = () => {
                 Committed full stack developer dedicated to crafting seamless
                 end-to-end web solutions.
               </div>
+              <div className="footer-social">
+                <img src={Github} />
+              </div>
             </div>
-            <div className="footer-right">
-              {/* <div className="footer-title">social</div>
-              <div className="footer-social">social-icons white</div> */}
-              {/* <button className="btn-scroll-top">
-                <img src={ArrowUp} />
-              </button> */}
-              <ArrowUp />
-            </div>
+            {/* <div className="footer-right">
+              <div className="footer-title">social</div>
+              <div className="footer-social">social-icons white</div>
+            </div> */}
           </div>
           <hr />
-          <div className="footer-copyright">Made with ❤ by Saksham</div>
+          <div className="footer-copyright">
+            <div className="footer-arrow-up">
+              <ArrowUp />
+            </div>
+            <p>Made with ❤ by Saksham</p>
+          </div>
         </div>
       </div>
     </>

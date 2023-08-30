@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import rightIcon from "../images/icon-right.png";
 
 import Noty from "noty";
 import "../../node_modules/noty/lib/noty.css";
@@ -82,7 +83,10 @@ const Contact = () => {
                 rows="10"
               ></textarea>
               <button type="submit" className="form-btn">
-                Send Message
+                Send Message{" "}
+                <span>
+                  <img src={rightIcon} alt="Icon-Right" />
+                </span>
               </button>
             </form>
           </div>

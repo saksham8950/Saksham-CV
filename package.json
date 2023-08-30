@@ -12,5 +12,8 @@
     "install-both": "npm run install-client && npm run install-server"
   },
   "author": "Saksham",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
 }
