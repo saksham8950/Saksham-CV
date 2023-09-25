@@ -15,7 +15,9 @@ const Footer = () => {
                 end-to-end web solutions.
               </div>
               <div className="footer-social">
-                <img src={Github} />
+                <a href="https://github.com/saksham8950">
+                  <img src={Github} />{" "}
+                </a>
               </div>
             </div>
             {/* <div className="footer-right">

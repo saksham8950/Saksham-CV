@@ -4,7 +4,6 @@
   "description": "",
   "scripts": {
     "start": "react-scripts start",
-    "install": "npm install",
     "build": "react-scripts build"
   },
   "keywords": [],
