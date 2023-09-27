@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.154a3657.css",
+    "main.js": "/static/js/main.2966d1b2.js",
+    "static/media/auth-system.png": "/static/media/auth-system.20bdbd0e29de0d4cdca7.png",
+    "static/media/issue-tracker.png": "/static/media/issue-tracker.6abad54a48b043423c78.png",
+    "static/media/github.png": "/static/media/github.198c846d2aa064c7b81b.png",
+    "static/media/cover-1.svg": "/static/media/cover-1.01121911d5c4ec8464bc.svg",
+    "index.html": "/index.html",
+    "main.154a3657.css.map": "/static/css/main.154a3657.css.map",
+    "main.2966d1b2.js.map": "/static/js/main.2966d1b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.154a3657.css",
+    "static/js/main.2966d1b2.js"
+  ]
+}
