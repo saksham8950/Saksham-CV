@@ -12,9 +12,9 @@ const Cover = () => {
             to end.
           </p>
           {/* <p className="sub-title">MERN stack Developer</p> todo in Future */}
-          <Link to="contact">
+          <a href="mailto:saksham.official174@gmail.com">
             <button className="hero-btn">Contact Me</button>
-          </Link>
+          </a>
         </div>
         {/* <div className="hero-img"><img src="" className="" alt="Cover Image"></img></div> ToDo in the Future, Side Image if to be add */}
       </div>

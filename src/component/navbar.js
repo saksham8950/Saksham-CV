@@ -21,19 +21,10 @@ const Navbar = () => {
         <nav className={showNav && "active"} id="nav">
           <ul>
             <li>
-              {/* <a href="#cover">Home</a> */}
               <Link to="/">Home</Link>
             </li>
-            {/* <li>
-              <a href="#about">About</a>
-            </li> */}
-            {/* <li>
-              <a href="#skills">Skills</a>
-            </li> */}
-            {/* <li><a href="" >Projects</a></li> */} {/* Todo in Future */}
             <li>
-              {/* <a href="">Contact</a> */}
-              <Link to="contact">Contact</Link>
+              <a href="mailto:saksham.official174@gmail.com">Contact</a>
             </li>
           </ul>
         </nav>

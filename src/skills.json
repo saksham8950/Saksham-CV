@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "icon": "code.png",
+    "title": "Front End",
+    "skills": ["React", "HTML", "Css", "Js", "sass", "Bootstrap"]
+  },
+  {
+    "id": "2",
+    "icon": "terminal.png",
+    "title": "Back End",
+    "skills": ["NodeJs", "Express", "Mongoose", "MySQL"]
+  },
+  {
+    "id": "3",
+    "icon": "dots.png",
+    "title": "Others",
+    "skills": [
+      "Shopify",
+      "Shopify Custom Development",
+      "Shopify Development",
+      "Shopify Plus",
+      "Git",
+      "Github"
+    ]
+  }
+]
