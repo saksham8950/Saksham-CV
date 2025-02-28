@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://saksham8950.github.io/MyPortfolio_2/",
+  "homepage": "https://saksham8950.github.io/MyPortfolio_2/build/index.html",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
